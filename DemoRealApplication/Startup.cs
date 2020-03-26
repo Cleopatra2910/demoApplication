@@ -1,23 +1,18 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
 using Application.Cereri;
 using Application.Cereri.Implementations;
 using Application.Persons;
 using Application.Persons.Implementations;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Persistance;
+using System.Reflection;
+using Application.Persons.Mappings;
+using AutoMapper;
 
 namespace DemoRealApplication
 {
@@ -34,6 +29,7 @@ namespace DemoRealApplication
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddAutoMapper(c => c.AddProfile<PersonProfile>(), typeof(Startup));
 
             var connectionString = Configuration.GetConnectionString("TestDemo");
 

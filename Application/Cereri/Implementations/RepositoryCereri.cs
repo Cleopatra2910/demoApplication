@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Application.Cereri.Models;
-using Application.Enums;
+﻿using Application.Enums;
+using DataTransferObjects.Cereri;
 using Persistance;
 using Persistance.Entities;
 

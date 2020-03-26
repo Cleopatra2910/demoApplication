@@ -5591,23 +5591,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Andrian\\.nuget\\packages\\": {},
+    "C:\\Users\\huben\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\Persistance\\Persistance.csproj",
+      "projectUniqueName": "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\Persistance\\Persistance.csproj",
       "projectName": "Persistance",
-      "projectPath": "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\Persistance\\Persistance.csproj",
-      "packagesPath": "C:\\Users\\Andrian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\Persistance\\obj\\",
+      "projectPath": "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\Persistance\\Persistance.csproj",
+      "packagesPath": "C:\\Users\\huben\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\Persistance\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Andrian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\huben\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -1,16 +1,16 @@
-﻿using System;
+﻿using DataTransferObjects.Persons;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
-using Application.Persons.Models;
+
 
 namespace Application.Persons
 {
     public interface IRepositoryPersons
     {
-        Task<int> AdaugarePersoana(PersonDto person);
-        Task StergerePersoana(int id);
-        Task<List<PersonDto>> ExtragerePersoane();
-        Task<PersonDto> ExtragerePersoana(int id);
+        Task<int> AdaugarePersoana(PersonForCreateDto person);
+        Task StergerePersoana(PersonForDeleteDto person);
+        Task<List<PersonDto>> ExtragerePersoaneForAdmin(GetPersonsForAdminDto data);
+        Task<PersonDto> ExtragerePersoana(GetPersonByIdDto data);
+        Task<List<PersonDropdownDto>> ExtragerDropdown();
     }
 }

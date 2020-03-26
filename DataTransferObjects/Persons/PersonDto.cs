@@ -1,14 +1,15 @@
 ﻿using System.Collections.Generic;
-using Application.Cereri.Models;
+using DataTransferObjects.Cereri;
 
-namespace Application.Persons.Models
+namespace DataTransferObjects.Persons
 {
     public class PersonDto
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string Password { get; set; }
 
-        public List<CerereDto> Cereri { get; set; }
+        //public List<CerereDto> Cereri { get; set; }
     }
 }

@@ -1,79 +1,93 @@
-﻿using Application.Persons.Models;
+﻿using Microsoft.EntityFrameworkCore;
 using Persistance;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Persistance.Entities;
+using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+using AutoMapper;
+using DataTransferObjects.Persons;
 
 namespace Application.Persons.Implementations
 {
     public class RepositoryPersons : IRepositoryPersons
     {
         private readonly AppDbContext _appDbContext;
+        private readonly IMapper _mapper;
 
-        public RepositoryPersons(AppDbContext appDbContext)
+        public RepositoryPersons(AppDbContext appDbContext, IMapper mapper)
         {
             _appDbContext = appDbContext;
+            _mapper = mapper;
         }
 
-        public async Task<int> AdaugarePersoana(PersonDto personDto)
+        private bool IsAdmin(string password)
         {
-            var newPerson = new Person
+            var result = _appDbContext.Persons.Any(x => x.IsAdmin == true && x.Password ==password);
+
+            return result;
+        }
+
+        public async Task<int> AdaugarePersoana(PersonForCreateDto personDto)
+        {
+            var checkIfIsAdmin = IsAdmin(personDto.AdminPassword);
+
+            if (checkIfIsAdmin == true)
             {
-                FirstName = personDto.FirstName,
-                LastName = personDto.LastName,
-            };
+                var newPerson = _mapper.Map<Person>(personDto);
 
-            _appDbContext.Persons.Add(newPerson);
-            await _appDbContext.SaveChangesAsync();
+                _appDbContext.Persons.Add(newPerson);
+                await _appDbContext.SaveChangesAsync();
 
-            return newPerson.Id;
+                return newPerson.Id;
+            }
+
+            return 0;
         }
 
-        public async Task StergerePersoana(int id)
+        public async Task StergerePersoana(PersonForDeleteDto personDto)
         {
-            var personForDelete = _appDbContext.Persons.FirstOrDefault(x => x.Id == id);
+            var checkIfIsAdmin = IsAdmin(personDto.AdminPassword);
 
-            _appDbContext.Persons.Remove(personForDelete);
-            await _appDbContext.SaveChangesAsync();
+            if (checkIfIsAdmin)
+            {
+                var personForDelete = _appDbContext.Persons.FirstOrDefault(x => x.Id == personDto.Id);
+
+                _appDbContext.Persons.Remove(personForDelete);
+                await _appDbContext.SaveChangesAsync();
+            }
         }
 
-        public async Task<List<PersonDto>> ExtragerePersoane()
+        public async Task<List<PersonDto>> ExtragerePersoaneForAdmin(GetPersonsForAdminDto data)
         {
-            //var personsFromDb = await _appDbContext.Persons.ToListAsync();
+            var checkIfIsAdmin = IsAdmin(data.AdminPassword);
 
-            //var personsDto = personsFromDb.Select(persoanaCurentaFromDb => new PersonDto
-            //{
-            //    Id = persoanaCurentaFromDb.Id,
-            //    FirstName = persoanaCurentaFromDb.FirstName,
-            //    LastName = persoanaCurentaFromDb.LastName
-            //}).ToList();
+            if (checkIfIsAdmin)
+            {
+                return await _appDbContext.Persons
+                    .Select(x => _mapper.Map<PersonDto>(x)).ToListAsync();
+            }
 
-            //return personsDto;
+            return new List<PersonDto>();
+        }
 
+        public async Task<PersonDto> ExtragerePersoana(GetPersonByIdDto getById)
+        {
+            var checkIfIsAdmini = IsAdmin(getById.AdminPassword);
+
+            if (checkIfIsAdmini)
+            {
+                var dbPerson = await _appDbContext.Persons.FirstOrDefaultAsync(x => x.Id == getById.Id);
+
+                return _mapper.Map<PersonDto>(dbPerson);
+            }
+
+            return new PersonDto();
+        }
+
+        public async Task<List<PersonDropdownDto>> ExtragerDropdown()
+        {
             return await _appDbContext.Persons
-                .Select(persoanaCurentaFromDb => new PersonDto
-                {
-                    Id = persoanaCurentaFromDb.Id,
-                    FirstName = persoanaCurentaFromDb.FirstName,
-                    LastName = persoanaCurentaFromDb.LastName
-                }).ToListAsync();
-        }
-
-        public async Task<PersonDto> ExtragerePersoana(int id)
-        {
-            var dbPerson = await _appDbContext.Persons.FirstOrDefaultAsync(x => x.Id == id);
-
-            return new PersonDto
-            {
-                Id = dbPerson.Id,
-                FirstName = dbPerson.FirstName,
-                LastName = dbPerson.LastName
-            };
+                .Select(x => _mapper.Map<PersonDropdownDto>(x)).ToListAsync();
         }
     }
 }

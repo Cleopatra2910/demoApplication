@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Application.Persons;
-using Application.Persons.Models;
-using Microsoft.AspNetCore.Http;
+﻿using Application.Persons;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using DataTransferObjects.Persons;
 
 namespace DemoRealApplication.Controllers
 {
@@ -15,33 +12,47 @@ namespace DemoRealApplication.Controllers
     {
         private readonly IRepositoryPersons _repositoryPersons;
 
+        #region Person For Admin
+
         public PersonController(IRepositoryPersons repositoryPersons)
         {
             _repositoryPersons = repositoryPersons;
         }
 
         [HttpPost]
-        public async Task<int> AddPerson([FromBody] PersonDto person)
+        public async Task<int> AddPerson([FromBody] PersonForCreateDto person)
         {
             return await _repositoryPersons.AdaugarePersoana(person);
         }
 
-        [HttpDelete("{id}")]
-        public async Task DeletePerson([FromRoute] int  id)
+        [HttpDelete]
+        public async Task DeletePerson([FromQuery] PersonForDeleteDto person)
         {
-            await _repositoryPersons.StergerePersoana(id);
+            await _repositoryPersons.StergerePersoana(person);
+        }
+
+        [HttpGet("getAll")]
+        public async Task<List<PersonDto>> GetPersons([FromQuery] GetPersonsForAdminDto data)
+        {
+            return await _repositoryPersons.ExtragerePersoaneForAdmin(data);
         }
 
         [HttpGet]
-        public async Task<List<PersonDto>> GetPersons()
+        public async Task<PersonDto> GetPerson([FromQuery] GetPersonByIdDto data)
         {
-            return await _repositoryPersons.ExtragerePersoane();
+            return await _repositoryPersons.ExtragerePersoana(data);
         }
 
-        [HttpGet("{id}")]
-        public async Task<PersonDto> GetPerson([FromRoute] int id)
+        #endregion
+
+        #region Person For Users
+
+        [HttpGet("person-dropdown")]
+        public async Task<List<PersonDropdownDto>> GetPersonsDropdown()
         {
-            return await _repositoryPersons.ExtragerePersoana(id);
+            return await _repositoryPersons.ExtragerDropdown();
         }
+
+        #endregion
     }
 }

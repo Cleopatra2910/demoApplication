@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Application.Cereri.Models
+namespace DataTransferObjects.Cereri
 {
     public class CerereDto
     {

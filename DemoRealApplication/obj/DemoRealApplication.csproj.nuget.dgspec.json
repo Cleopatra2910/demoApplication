@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\DemoRealApplication\\DemoRealApplication.csproj": {}
+    "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\DemoRealApplication\\DemoRealApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\Application\\Application.csproj": {
+    "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\Andrian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\Application\\obj\\",
+        "projectPath": "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\huben\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Andrian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huben\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,10 +30,74 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\Persistance\\Persistance.csproj": {
-                "projectPath": "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\Persistance\\Persistance.csproj"
+              "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\DataTransferObjects\\DataTransferObjects.csproj": {
+                "projectPath": "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\DataTransferObjects\\DataTransferObjects.csproj"
+              },
+              "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\Persistance\\Persistance.csproj": {
+                "projectPath": "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\Persistance\\Persistance.csproj"
               }
             }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\DataTransferObjects\\DataTransferObjects.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\DataTransferObjects\\DataTransferObjects.csproj",
+        "projectName": "DataTransferObjects",
+        "projectPath": "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\DataTransferObjects\\DataTransferObjects.csproj",
+        "packagesPath": "C:\\Users\\huben\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\DataTransferObjects\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\huben\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -63,20 +127,20 @@
         }
       }
     },
-    "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\DemoRealApplication\\DemoRealApplication.csproj": {
+    "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\DemoRealApplication\\DemoRealApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\DemoRealApplication\\DemoRealApplication.csproj",
+        "projectUniqueName": "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\DemoRealApplication\\DemoRealApplication.csproj",
         "projectName": "DemoRealApplication",
-        "projectPath": "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\DemoRealApplication\\DemoRealApplication.csproj",
-        "packagesPath": "C:\\Users\\Andrian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\DemoRealApplication\\obj\\",
+        "projectPath": "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\DemoRealApplication\\DemoRealApplication.csproj",
+        "packagesPath": "C:\\Users\\huben\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\DemoRealApplication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Andrian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huben\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,11 +153,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\Application\\Application.csproj"
+              "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\Application\\Application.csproj"
               },
-              "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\Persistance\\Persistance.csproj": {
-                "projectPath": "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\Persistance\\Persistance.csproj"
+              "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\Persistance\\Persistance.csproj": {
+                "projectPath": "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\Persistance\\Persistance.csproj"
               }
             }
           }
@@ -148,20 +212,20 @@
         }
       }
     },
-    "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\Persistance\\Persistance.csproj": {
+    "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\Persistance\\Persistance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\Persistance\\Persistance.csproj",
+        "projectUniqueName": "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\Persistance\\Persistance.csproj",
         "projectName": "Persistance",
-        "projectPath": "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\Persistance\\Persistance.csproj",
-        "packagesPath": "C:\\Users\\Andrian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andrian\\source\\repos\\DemoRealApplication\\Persistance\\obj\\",
+        "projectPath": "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\Persistance\\Persistance.csproj",
+        "packagesPath": "C:\\Users\\huben\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\huben\\OneDrive\\Desktop\\demoApp\\demoApplication\\Persistance\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Andrian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huben\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

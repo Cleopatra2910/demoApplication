@@ -1,0 +1,8 @@
+C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DataTransferObjects\bin\Debug\netcoreapp3.1\DataTransferObjects.deps.json
+C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DataTransferObjects\bin\Debug\netcoreapp3.1\DataTransferObjects.dll
+C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DataTransferObjects\bin\Debug\netcoreapp3.1\DataTransferObjects.pdb
+C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DataTransferObjects\obj\Debug\netcoreapp3.1\DataTransferObjects.csprojAssemblyReference.cache
+C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DataTransferObjects\obj\Debug\netcoreapp3.1\DataTransferObjects.AssemblyInfoInputs.cache
+C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DataTransferObjects\obj\Debug\netcoreapp3.1\DataTransferObjects.AssemblyInfo.cs
+C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DataTransferObjects\obj\Debug\netcoreapp3.1\DataTransferObjects.dll
+C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DataTransferObjects\obj\Debug\netcoreapp3.1\DataTransferObjects.pdb
