@@ -12,13 +12,14 @@ C:\Users\Andrian\source\repos\DemoRealApplication\Application\obj\Debug\netcorea
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Application\bin\Debug\netcoreapp3.1\Application.deps.json
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Application\bin\Debug\netcoreapp3.1\Application.dll
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Application\bin\Debug\netcoreapp3.1\Application.pdb
+C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Application\bin\Debug\netcoreapp3.1\DataTransferObjects.dll
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Application\bin\Debug\netcoreapp3.1\Persistance.dll
+C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Application\bin\Debug\netcoreapp3.1\DataTransferObjects.pdb
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Application\bin\Debug\netcoreapp3.1\Persistance.pdb
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Application\obj\Debug\netcoreapp3.1\Application.csprojAssemblyReference.cache
+C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Application\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Application\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Application\obj\Debug\netcoreapp3.1\Application.dll
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Application\obj\Debug\netcoreapp3.1\Application.pdb
-C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Application\bin\Debug\netcoreapp3.1\DataTransferObjects.dll
-C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Application\bin\Debug\netcoreapp3.1\DataTransferObjects.pdb
