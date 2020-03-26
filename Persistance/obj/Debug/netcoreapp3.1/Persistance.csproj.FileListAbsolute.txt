@@ -13,6 +13,7 @@ C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Persistance\bin\Debug\ne
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Persistance\bin\Debug\netcoreapp3.1\Persistance.runtimeconfig.dev.json
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Persistance\bin\Debug\netcoreapp3.1\Persistance.dll
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Persistance\bin\Debug\netcoreapp3.1\Persistance.pdb
+C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Persistance\obj\Debug\netcoreapp3.1\Persistance.csprojAssemblyReference.cache
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Persistance\obj\Debug\netcoreapp3.1\Persistance.csproj.CoreCompileInputs.cache
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Persistance\obj\Debug\netcoreapp3.1\Persistance.AssemblyInfoInputs.cache
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\Persistance\obj\Debug\netcoreapp3.1\Persistance.AssemblyInfo.cs

@@ -1,3 +1,4 @@
+using System;
 using Application.Cereri;
 using Application.Cereri.Implementations;
 using Application.Persons;
@@ -11,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Persistance;
 using System.Reflection;
+using Application.Cereri.Mappings;
 using Application.Persons.Mappings;
 using AutoMapper;
 
@@ -29,7 +31,8 @@ namespace DemoRealApplication
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddAutoMapper(c => c.AddProfile<PersonProfile>(), typeof(Startup));
+
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             var connectionString = Configuration.GetConnectionString("TestDemo");
 
@@ -52,6 +55,10 @@ namespace DemoRealApplication
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
             });
+
+            services.AddControllers().AddNewtonsoftJson(options =>
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

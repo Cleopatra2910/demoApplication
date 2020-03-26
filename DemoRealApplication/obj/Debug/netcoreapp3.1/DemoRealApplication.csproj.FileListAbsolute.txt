@@ -242,9 +242,6 @@ C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DemoRealApplication\bin\
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DemoRealApplication\bin\Debug\netcoreapp3.1\Persistance.pdb
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DemoRealApplication\bin\Debug\netcoreapp3.1\DataTransferObjects.pdb
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DemoRealApplication\obj\Debug\netcoreapp3.1\DemoRealApplication.csprojAssemblyReference.cache
-C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DemoRealApplication\obj\Debug\netcoreapp3.1\DemoRealApplication.csproj.CoreCompileInputs.cache
-C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DemoRealApplication\obj\Debug\netcoreapp3.1\DemoRealApplication.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DemoRealApplication\obj\Debug\netcoreapp3.1\DemoRealApplication.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DemoRealApplication\obj\Debug\netcoreapp3.1\DemoRealApplication.AssemblyInfoInputs.cache
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DemoRealApplication\obj\Debug\netcoreapp3.1\DemoRealApplication.AssemblyInfo.cs
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DemoRealApplication\obj\Debug\netcoreapp3.1\DemoRealApplication.RazorTargetAssemblyInfo.cache
@@ -254,3 +251,9 @@ C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DemoRealApplication\obj\
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DemoRealApplication\obj\Debug\netcoreapp3.1\DemoRealApplication.dll
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DemoRealApplication\obj\Debug\netcoreapp3.1\DemoRealApplication.pdb
 C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DemoRealApplication\obj\Debug\netcoreapp3.1\DemoRealApplication.genruntimeconfig.cache
+C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DemoRealApplication\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DemoRealApplication\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DemoRealApplication\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DemoRealApplication\obj\Debug\netcoreapp3.1\DemoRealApplication.csproj.CoreCompileInputs.cache
+C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DemoRealApplication\obj\Debug\netcoreapp3.1\DemoRealApplication.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\huben\OneDrive\Desktop\demoApp\demoApplication\DemoRealApplication\obj\Debug\netcoreapp3.1\DemoRealApplication.MvcApplicationPartsAssemblyInfo.cache

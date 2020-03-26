@@ -1009,6 +1009,9 @@
         }
       },
       "DataTransferObjects/1.0.0": {
+        "dependencies": {
+          "Persistance": "1.0.0"
+        },
         "runtime": {
           "DataTransferObjects.dll": {}
         }
